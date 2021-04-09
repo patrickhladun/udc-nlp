@@ -1,0 +1,9 @@
+{
+  "name": "udc-nlp",
+  "version": "1.0.0",
+  "description": "Udacity Natural Language Processing Project",
+  "main": "index.js",
+  "repository": "git@github.com:patrickhladun/udc-nlp.git",
+  "author": "Patrick Hladun",
+  "license": "MIT"
+}
