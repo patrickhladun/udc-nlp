@@ -27,12 +27,6 @@ module.exports = merge(config, {
             template: "./src/client/views/index.html",
             filename: "./index.html",
         }),
-        new CleanWebpackPlugin({
-            dry: false,
-            verbose: true,
-            cleanStaleWebpackAssets: true,
-            protectWebpackAssets: false
-        }),
         new MiniCssExtractPlugin()
     ]
 });
