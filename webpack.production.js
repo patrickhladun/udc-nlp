@@ -1,8 +1,10 @@
 const { merge } = require('webpack-merge');
 const config = require('./webpack.config.js');
 
+const mode = 'production';
+
 module.exports = merge(config, {
-    mode: 'production',
+    mode,
     module: {
         rules: [
             {
