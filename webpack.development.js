@@ -1,6 +1,6 @@
 const { merge } = require('webpack-merge');
 const config = require('./webpack.config.js');
-const HtmlWebPackPlugin = require("html-webpack-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = merge(config, {
     mode: 'development',
@@ -13,12 +13,13 @@ module.exports = merge(config, {
             },
             {   
                 test: /\.css$/,
-                exclude: /node_modules/
+                exclude: /node_modules/,
+                use: ['style-loader', 'css-loader']
             }
         ]
     },
     plugins: [
-        new HtmlWebPackPlugin({
+        new HtmlWebpackPlugin({
             template: "./src/client/views/index.html",
             filename: "./index.html",
         })
