@@ -28,5 +28,8 @@ module.exports = merge(config, {
             filename: "./index.html",
         }),
         new MiniCssExtractPlugin()
-    ]
+    ],
+    devServer: {
+        port: 3000
+    },
 });
