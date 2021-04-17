@@ -15,7 +15,6 @@ function handleSubmit() {
     .then(response => response.json())
     .then((res) => {
         updateUI(res);
-        console.log(res);
     });
 }
 
