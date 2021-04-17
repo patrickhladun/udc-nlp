@@ -23,4 +23,13 @@
             <p>This is a footer</p>
         </footer>
     </body>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker
+                .register('/cached_pages.js')
+                .then(reg => console.log('Service Worker: Registered!'));
+            });
+        }
+    </script>
 </html>
