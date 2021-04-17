@@ -6,7 +6,7 @@
     "start": "node src/server/index.js",
     "build": "webpack --config webpack.production.js",
     "dev": "webpack serve --config webpack.development.js",
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "keywords": [],
   "author": "",

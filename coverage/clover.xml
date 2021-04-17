@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1618668875482" clover="3.2.0">
+  <project timestamp="1618668875482" name="All files">
+    <metrics statements="13" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0" elements="19" coveredelements="1" complexity="0" loc="13" ncloc="13" packages="1" files="2" classes="2"/>
+    <file name="formHandler.js" path="/Volumes/Firestorm/github/public/udc-nlp/src/client/js/formHandler.js">
+      <metrics statements="5" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="5" count="0" type="stmt"/>
+      <line num="7" count="0" type="stmt"/>
+      <line num="13" count="0" type="stmt"/>
+      <line num="15" count="0" type="stmt"/>
+    </file>
+    <file name="updateUI.js" path="/Volumes/Firestorm/github/public/udc-nlp/src/client/js/updateUI.js">
+      <metrics statements="8" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <line num="2" count="0" type="stmt"/>
+      <line num="3" count="0" type="stmt"/>
+      <line num="5" count="0" type="stmt"/>
+      <line num="10" count="0" type="stmt"/>
+      <line num="12" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="13" count="0" type="stmt"/>
+      <line num="15" count="0" type="stmt"/>
+      <line num="18" count="0" type="stmt"/>
+    </file>
+  </project>
+</coverage>
