@@ -27,7 +27,7 @@
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
                 navigator.serviceWorker
-                .register('/cached_pages.js')
+                .register('/service-workers.js')
                 .then(reg => console.log('Service Worker: Registered!'));
             });
         }

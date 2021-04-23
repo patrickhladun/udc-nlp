@@ -5,11 +5,13 @@ const path = require('path');
 const express = require('express');
 const fetch = require('node-fetch');
 const app = express();
+
 dotenv.config();
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
 app.use(cors());
+
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
 const port = 8080;
 const server = app.listen(port, () => console.log(`Running on port: ${port}`));
