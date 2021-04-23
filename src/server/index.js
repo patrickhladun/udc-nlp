@@ -18,7 +18,7 @@ const server = app.listen(port, () => console.log(`Running on port: ${port}`));
 
 app.use(express.static('dist'));
 
-app.get('/', (req, res) => res.sendFile(path.resolve('src/client/views/index.html')));
+app.get('/', (req, res) => res.sendFile(path.resolve('dist/index.html')));
 
 app.post('/language', (req, res) => {
     
