@@ -2,20 +2,29 @@ const updateUI = (res) => {
     const results = document.getElementById('results');
     results.innerHTML = '';
 
-    const data = {
-        language: res.language_list[0].name,
-        relevance: res.language_list[0].relevance
-    };
+    const { confidence, subjectivity, agreement, irony, score_tag } = res;
 
-    let language = document.createElement('p');
+    let confidenceOutput = document.createElement('p');
+    confidenceOutput.innerHTML = `Confidence: ${confidence}%`;
 
-    if(data.language === 'Undetermined') {
-        language.innerHTML = `Oh boy, I have no idea what gybrish this is, please try again!`;
-    } else {
-        language.innerHTML = `I am sure in ${data.relevance}% that this is ${data.language} language!`;
-    }
+    let subjectivityOutput = document.createElement('p');
+    subjectivityOutput.innerHTML = `Subjectivity: ${subjectivity}`;
 
-    results.append(language);
+    let agreementOutput = document.createElement('p');
+    agreementOutput.innerHTML = `Agreement: ${agreement}`;
+
+    let ironyOutput = document.createElement('p');
+    ironyOutput.innerHTML = `Irony: ${irony}`;
+
+    let scoreTagOutput = document.createElement('p');
+    scoreTagOutput.innerHTML = `Score Tag: ${score_tag}`;
+    
+    results.append(confidenceOutput);
+    results.append(subjectivityOutput);
+    results.append(agreementOutput);
+    results.append(ironyOutput);
+    results.append(scoreTagOutput);
+
 }
 
 export default updateUI;

@@ -8,10 +8,12 @@
     <body>
         <header>
             <h1>Udacity Natural Language Processing Project</h1>
+            <h2>Sentiment Analysis</h2>
+            <p>Sentiment Analysis analyzes texts and detects their polarity, subjectivity, irony and emotional agreement.</p>
         </header>
         <main>
             <section>
-                <textarea id="txt" type="text" name="txt" value="" placeholder="Write text here and check what language it is"></textarea>
+                <input id="url" type="text" name="url" value="" placeholder="Add URL here">
                 <button id="submit" type="submit">Submit</button>
             </section>
             <section>
@@ -19,9 +21,6 @@
                 <div id="results"></div>
             </section>
         </main>
-        <footer>
-            <p>This is a footer</p>
-        </footer>
     </body>
     <script>
         if ('serviceWorker' in navigator) {

@@ -1,22 +1,19 @@
 import updateUI from './updateUI';
-import textValidation from './textValidation';
+import urlValidation from './urlValidation';
 
-const handleSubmit = () => {
+const handleSubmit = ()  => {
 
-    const txt = document.getElementById('txt').value;
+    const url = document.getElementById('url').value;
+    const payload = { url };
 
-    if(textValidation(txt)) {
-        const payload = { txt };
-
-        fetch('http://localhost:8080/language', {
-            method: 'POST',
-            credentials: 'same-origin',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(payload)
-        })
-        .then(response => response.json())
-        .then(response => updateUI(response));
-    }
+    fetch('http://localhost:8080/language', {
+        method: 'POST',
+        credentials: 'same-origin',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+    })
+    .then(response => response.json())
+    .then(response => updateUI(response));
 }
 
 export default handleSubmit;

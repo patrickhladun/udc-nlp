@@ -23,9 +23,9 @@ app.get('/', (req, res) => res.sendFile(path.resolve('dist/index.html')));
 app.post('/language', (req, res) => {
     
     const key = process.env.MC_API_KEY;
-    const txt = req.body.txt;
-    
-    fetch(`https://api.meaningcloud.com/lang-4.0/identification?key=${key}&txt=${txt}`, { method: 'POST' })
+    const url = req.body.url;
+
+    fetch(`https://api.meaningcloud.com/sentiment-2.1?key=${key}&url=${url}&lang=en`, { method: 'POST' })
         .then(response => response.json())
         .then(data => res.send(data))
         .catch(error => console.log('error', error));
