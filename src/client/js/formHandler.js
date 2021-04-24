@@ -3,8 +3,10 @@ import urlValidation from './urlValidation';
 
 const handleSubmit = ()  => {
     const url = document.getElementById('url').value;
-    
+    const error = document.getElementById('error');
+
     if(urlValidation(url)) {
+        error.innerHTML = '';
         const payload = { url };
         const results = document.getElementById('results');
         results.innerHTML = '<p>Loading...</p>';        
@@ -17,6 +19,8 @@ const handleSubmit = ()  => {
         })
         .then(response => response.json())
         .then(response => updateUI(response));
+    } else {
+        error.innerHTML = '<p>Please check if your URL is correct. It need to include http:// or https://</p>';
     }
 }
 

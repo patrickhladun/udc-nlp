@@ -1,29 +1,27 @@
 body {
+    background: #bedbe6;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    color: rgb(37, 37, 37);
 }
+
 h1 {
     font-size: 32px;
 }
+
 h2 {
     font-size: 26px;
 }
+
 p {
     font-size: 17px;
 }
-main {
-    flex: 2;
-}
-
 header {
-    max-width: 800px;
-    margin: 50px auto;
-    display: flex;
-    flex-direction: column;
+    padding: 36px 0;
 }
 
-section {
+#page {
     max-width: 800px;
     margin: 50px auto;
 }
