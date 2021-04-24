@@ -1,17 +1,29 @@
 body {
+    background: #bedbe6;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
+
 h1 {
     font-size: 32px;
 }
+
 h2 {
     font-size: 26px;
 }
+
 p {
     font-size: 17px;
 }
+
+input {
+    display: inline-block;
+    background: #fff;
+    padding: 42px 24px;
+    border: transparent;
+}
+
 main {
     flex: 2;
 }
